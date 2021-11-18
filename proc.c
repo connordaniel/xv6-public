@@ -397,7 +397,9 @@ void checkQueue(struct proc *i, int *queueMax) {
 }
 
 int isRunnable(struct proc *i, int queueMax) {
-  return (i->queueNum < queueMax || i->remaining <= 0);
+  if (i->queueNum < queueMax || i->remaining <= 0)
+    return 0;
+  else return 1;
 }
 
 void changeQueue(struct proc *i, int queueNew){ 
