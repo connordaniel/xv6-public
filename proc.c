@@ -21,7 +21,7 @@ extern void trapret(void);
 static void wakeup1(void *chan);
 
 void changeQueue(struct proc *i, int queueNew);
-int canRun(struct proc *i, int queueMax);
+int isRunnable(struct proc *i, int queueMax);
 void checkQueue(struct proc *i, int *queueMax);
 
 void
@@ -396,7 +396,7 @@ void checkQueue(struct proc *i, int *queueMax) {
   }
 }
 
-int canRun(struct proc *i, int queueMax) {
+int isRunnable(struct proc *i, int queueMax) {
   return (i->queueNum < queueMax || i->remaining <= 0);
 }
 
