@@ -88,6 +88,9 @@ allocproc(void)
 found:
   p->state = EMBRYO;
   p->pid = nextpid++;
+  p->queueNum = 3;
+  p->countIter = 8;
+  p->idle = 0;
 
   release(&ptable.lock);
 
@@ -329,13 +332,24 @@ scheduler(void)
   for(;;){
     // Enable interrupts on this processor.
     sti();
-
+    int queueMax = 0;
     // Loop over process table looking for process to run.
     acquire(&ptable.lock);
     for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
+      for (struct proc *i = ptable.proc; i < &ptable.proc[NPROC]; i++) {
+        if (i->state == RUNNABLE) {
+          checkQueue(i, &queueMax);
+        }
+      }
+      
       if(p->state != RUNNABLE)
         continue;
-
+      if (isRunnable(p, queueMax) == 0) {
+        p->countIdle++;
+        continue;
+      }
+      p->remaining--;
+      cprintf("process [%s, %d] process queue number: %d, idle count: %d, iterations left: %d\n", p->name, p->pid, p->queueNum, p->countIdle, p->remaining);
       // Switch to chosen process.  It is the process's job
       // to release ptable.lock and then reacquire it
       // before jumping back to us.
@@ -355,6 +369,54 @@ scheduler(void)
   }
 }
 
+void checkQueue(struct proc *i, int *queueMax) {
+  if (i->queueNum > *queueMax)
+    *queueMax = i->queueNum;
+  if (isRunnable(i, *queueMax))
+    return;
+  if (i->remaining <= 0) {
+    if (i->queueNum > 0) {
+      changeQueue(i, i->queueNum - 1);
+      return;
+    }
+    changeQueue(i, 0);
+    return;
+  }
+  if (i->countIdle > i->remaining) {
+    if (i->queueNum < 3) {
+      changeQueue(i, i->queueNum + 1);
+      return;
+    }
+    changeQueue(i, 3);
+    return;
+  }
+}
+
+int canRun(struct proc *i, int queueMax) {
+  return (i->queueNum < queueMax || i->remaining <= 0);
+}
+
+void changeQueue(struct proc *i, int queueNew){ 
+  i->queueNum = queueNew;
+  i->countIdle = 0;
+  switch(queueNew) {
+    case 0:
+      i->remaining = 500;
+      break;
+    case 1:
+      i->remaining = 24;
+      break;
+    case 2:
+      i->remaining = 16;
+      break;
+    case 3:
+      i->remaining = 8;
+      break;
+    default:
+      cprintf("ERROR");
+      break;
+  }
+}
 // Enter scheduler.  Must hold only ptable.lock
 // and have changed proc->state. Saves and restores
 // intena because intena is a property of this
