@@ -20,6 +20,10 @@ extern void trapret(void);
 
 static void wakeup1(void *chan);
 
+void changeQueue(struct proc *i, int queueNew);
+int canRun(struct proc *i, int queueMax);
+void checkQueue(struct proc *i, int *queueMax);
+
 void
 pinit(void)
 {
@@ -89,8 +93,8 @@ found:
   p->state = EMBRYO;
   p->pid = nextpid++;
   p->queueNum = 3;
-  p->countIter = 8;
-  p->idle = 0;
+  p->remaining = 8;
+  p->countIdle = 0;
 
   release(&ptable.lock);
 
