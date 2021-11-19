@@ -1,0 +1,247 @@
+Script started on 2021-11-19 14:00:50-0500
+]0;connorjd@cisc474: ~/x2/xv6-public[01;32mconnorjd@cisc474[00m:[01;34m~/x2/xv6-public[00m$ make qemu-nox
+qemu-system-i386 -nographic -drive file=fs.img,index=1,media=disk,format=raw -drive file=xv6.img,index=0,media=disk,format=raw -smp 2 -m 512 
+xv6...
+cpu1: starting 1
+cpu0: starting 0
+process [initcode, 1] process queue number: 3, idle count: 0, iterations left: 7
+process [initcode, 1] process queue number: 3, idle count: 0, iterations left: 6
+sb: size 1000 nblocks 941 ninodes 200 nlog 30 logstart 2 inodestart 32 bmap start 58
+process [initcode, 1] process queue number: 3, idle count: 0, iterations left: 5
+process [initcode, 1] process queue number: 3, idle count: 0, iterations left: 4
+process [initcode, 1] process queue number: 3, idle count: 0, iterations left: 3
+process [initcode, 1] process queue number: 3, idle count: 0, iterations left: 2
+process [initcode, 1] process queue number: 3, idle count: 0, iterations left: 1
+process [initcode, 1] process queue number: 3, idle count: 0, iterations left: 0
+process [initcode, 1] process queue number: 2, idle count: 0, iterations left: 15
+process [initcode, 1] process queue number: 2, idle count: 0, iterations left: 14
+process [initcode, 1] process queue number: 2, idle count: 0, iterations left: 13
+process [initcode, 1] process queue number: 2, idle count: 0, iterations left: 12
+process [initcode, 1] process queue number: 2, idle count: 0, iterations left: 11
+process [initcode, 1] process queue number: 2, idle count: 0, iterations left: 10
+process [initcode, 1] process queue number: 2, idle count: 0, iterations left: 9
+process [initcode, 1] process queue number: 2, idle count: 0, iterations left: 8
+process [initcode, 1] process queue number: 2, idle count: 0, iterations left: 7
+process [initcode, 1] process queue number: 2, idle count: 0, iterations left: 6
+process [initcode, 1] process queue number: 2, idle count: 0, iterations left: 5
+process [initcode, 1] process queue number: 2, idle count: 0, iterations left: 4
+process [initcode, 1] process queue number: 2, idle count: 0, iterations left: 3
+process [initcode, 1] process queue number: 2, idle count: 0, iterations left: 2
+process [initcode, 1] process queue number: 2, idle count: 0, iterations left: 1
+process [initcode, 1] process queue number: 2, idle count: 0, iterations left: 0
+process [initcode, 1] process queue number: 1, idle count: 1, iterations left: 23
+process [initcode, 1] process queue number: 1, idle count: 1, iterations left: 22
+process [initcode, 1] process queue number: 1, idle count: 1, iterations left: 21
+process [initcode, 1] process queue number: 1, idle count: 1, iterations left: 20
+process [initcode, 1] process queue number: 1, idle count: 1, iterations left: 19
+process [initcode, 1] process queue number: 1, idle count: 1, iterations left: 18
+process [initcode, 1] process queue number: 1, idle count: 1, iterations left: 17
+process [initcode, 1] process queue number: 1, idle count: 1, iterations left: 16
+process [initcode, 1] process queue number: 1, idle count: 1, iterations left: 15
+process [initcode, 1] process queue number: 1, idle count: 1, iterations left: 14
+process [initcode, 1] process queue number: 1, idle count: 1, iterations left: 13
+process [initcode, 1] process queue number: 1, idle count: 1, iterations left: 12
+process [initcode, 1] process queue number: 1, idle count: 1, iterations left: 11
+process [initcode, 1] process queue number: 1, idle count: 1, iterations left: 10
+process [initcode, 1] process queue number: 1, idle count: 1, iterations left: 9
+process [init, 1] process queue number: 1, idle count: 1, iterations left: 8
+process [init, 1] process queue number: 1, idle count: 1, iterations left: 7
+init: startprocess [init, 1] process queue number: 1, idle count: 1, iterations left: 6
+process [init, 1] process queue number: 1, idle count: 1, iterations left: 5
+ing sh
+process [init, 1] process queue number: 1, idle count: 1, iterations left: 4
+process [init, 1] process queue number: 1, idle count: 1, iterations left: 3
+process [init, 2] process queue number: 3, idle count: 0, iterations left: 7
+process [init, 2] process queue number: 3, idle count: 0, iterations left: 6
+process [init, 2] process queue number: 3, idle count: 0, iterations left: 5
+process [init, 2] process queue number: 3, idle count: 0, iterations left: 4
+process [init, 2] process queue number: 3, idle count: 0, iterations left: 3
+process [init, 2] process queue number: 3, idle count: 0, iterations left: 2
+process [init, 2] process queue number: 3, idle count: 0, iterations left: 1
+process [init, 2] process queue number: 3, idle count: 0, iterations left: 0
+process [init, 2] process queue number: 2, idle count: 0, iterations left: 15
+process [init, 2] process queue number: 2, idle count: 0, iterations left: 14
+process [init, 2] process queue number: 2, idle count: 0, iterations left: 13
+process [init, 2] process queue number: 2, idle count: 0, iterations left: 12
+process [init, 2] process queue number: 2, idle count: 0, iterations left: 11
+process [init, 2] process queue number: 2, idle count: 0, iterations left: 10
+process [init, 2] process queue number: 2, idle count: 0, iterations left: 9
+process [init, 2] process queue number: 2, idle count: 0, iterations left: 8
+process [init, 2] process queue number: 2, idle count: 0, iterations left: 7
+process [init, 2] process queue number: 2, idle count: 0, iterations left: 6
+process [init, 2] process queue number: 2, idle count: 0, iterations left: 5
+process [init, 2] process queue number: 2, idle count: 0, iterations left: 4
+process [init, 2] process queue number: 2, idle count: 0, iterations left: 3
+process [init, 2] process queue number: 2, idle count: 0, iterations left: 2
+process [init, 2] process queue number: 2, idle count: 0, iterations left: 1
+process [init, 2] process queue number: 2, idle count: 0, iterations left: 0
+process [init, 2] process queue number: 1, idle count: 0, iterations left: 23
+process [init, 2] process queue number: 1, idle count: 0, iterations left: 22
+process [init, 2] process queue number: 1, idle count: 0, iterations left: 21
+process [init, 2] process queue number: 1, idle count: 0, iterations left: 20
+process [init, 2] process queue number: 1, idle count: 0, iterations left: 19
+process [init, 2] process queue number: 1, idle count: 0, iterations left: 18
+process [init, 2] process queue number: 1, idle count: 0, iterations left: 17
+process [init, 2] process queue number: 1, idle count: 0, iterations left: 16
+process [init, 2] process queue number: 1, idle count: 0, iterations left: 15
+process [init, 2] process queue number: 1, idle count: 0, iterations left: 14
+process [init, 2] process queue number: 1, idle count: 0, iterations left: 13
+process [init, 2] process queue number: 1, idle count: 0, iterations left: 12
+process [init, 2] process queue number: 1, idle count: 0, iterations left: 11
+process [init, 2] process queue number: 1, idle count: 0, iterations left: 10
+process [init, 2] process queue number: 1, idle count: 0, iterations left: 9
+process [init, 2] process queue number: 1, idle count: 0, iterations left: 8
+process [init, 2] process queue number: 1, idle count: 0, iterations left: 7
+process [init, 2] process queue number: 1, idle count: 0, iterations left: 6
+process [init, 2] process queue number: 1, idle count: 0, iterations left: 5
+$ usertest &
+process [sh, 2] process queue number: 1, idle count: 0, iterations left: 4
+process [sh, 2] process queue number: 1, idle count: 0, iterations left: 3
+process [sh, 2] process queue number: 1, idle count: 0, iterations left: 2
+process [sh, 2] process queue number: 1, idle count: 0, iterations left: 1
+process [sh, 2] process queue number: 1, idle count: 0, iterations left: 0
+process [sh, 3] process queue number: 3, idle count: 0, iterations left: 7
+process [sh, 3] process queue number: 3, idle count: 0, iterations left: 6
+process [sh, 3] process queue number: 3, idle count: 0, iterations left: 5
+process [sh, 3] process queue number: 3, idle count: 0, iterations left: 4
+process [sh, 4] process queue number: 3, idle count: 0, iterations left: 7
+process [sh, 4] process queue number: 3, idle count: 0, iterations left: 6
+exec: fail
+exec usprocess [sh, 2] process queue number: 0, idle count: 1, iterations left: 499
+process [sh, 2] process queue number: 0, idle count: 1, iterations left: 498
+process [sh, 4] process queue number: 3, idle count: 0, iterations left: 5
+process [sh, 4] process queue number: 3, idle count: 0, iterations left: 4
+process [sh, 4] process queue number: 3, idle count: 0, iterations left: 3
+process [sh, 2] process queue number: 0, idle count: 1, iterations left: 497
+process [sh, 2] process queue number: 0, idle count: 1, iterations left: 496
+$ process [sh, 4] process queue number: 3, idle count: 0, iterations left: 2
+ertprocess [sh, 4] process queue number: 3, idle count: 0, iterations left: 1
+est failed
+process [init, 1] process queue number: 1, idle count: 1, iterations left: 2
+process [init, 1] process queue number: 1, idle count: 1, iterations left: 1
+zombie!
+ls
+process [sh, 2] process queue number: 0, idle count: 1, iterations left: 495
+process [sh, 2] process queue number: 0, idle count: 1, iterations left: 494
+process [sh, 2] process queue number: 0, idle count: 1, iterations left: 493
+process [sh, 2] process queue number: 0, idle count: 1, iterations left: 492
+process [sh, 5] process queue number: 3, idle count: 0, iterations left: 7
+process [sh, 5] process queue number: 3, idle count: 0, iterations left: 6
+process [sh, 5] process queue number: 3, idle count: 0, iterations left: 5
+process [sh, 5] process queue number: 3, idle count: 0, iterations left: 4
+process [sh, 5] process queue number: 3, idle count: 0, iterations left: 3
+process [sh, 5] process queue number: 3, idle count: 0, iterations left: 2
+process [sh, 5] process queue number: 3, idle count: 0, iterations left: 1
+process [sh, 5] process queue number: 3, idle count: 0, iterations left: 0
+process [sh, 5] process queue number: 2, idle count: 0, iterations left: 15
+process [sh, 5] process queue number: 2, idle count: 0, iterations left: 14
+process [sh, 5] process queue number: 2, idle count: 0, iterations left: 13
+process [sh, 5] process queue number: 2, idle count: 0, iterations left: 12
+process [sh, 5] process queue number: 2, idle count: 0, iterations left: 11
+process [sh, 5] process queue number: 2, idle count: 0, iterations left: 10
+process [sh, 5] process queue number: 2, idle count: 0, iterations left: 9
+process [sh, 5] process queue number: 2, idle count: 0, iterations left: 8
+process [sh, 5] process queue number: 2, idle count: 0, iterations left: 7
+process [sh, 5] process queue number: 2, idle count: 0, iterations left: 6
+process [sh, 5] process queue number: 2, idle count: 0, iterations left: 5
+process [sh, 5] process queue number: 2, idle count: 0, iterations left: 4
+process [sh, 5] process queue number: 2, idle count: 0, iterations left: 3
+process [sh, 5] process queue number: 2, idle count: 0, iterations left: 2
+process [sh, 5] process queue number: 2, idle count: 0, iterations left: 1
+process [sh, 5] process queue number: 2, idle count: 0, iterations left: 0
+process [sh, 5] process queue number: 1, idle count: 0, iterations left: 23
+process [sh, 5] process queue number: 1, idle count: 0, iterations left: 22
+process [sh, 5] process queue number: 1, idle count: 0, iterations left: 21
+process [sh, 5] process queue number: 1, idle count: 0, iterations left: 20
+.        process [ls, 5] process queue number: 1, idle count: 0, iterations left: 19
+      1 1 512
+process [ls, 5] process queue number: 1, idle count: 0, iterations left: 18
+..             1 1 512
+process [ls, 5] process queue number: 1, idle count: 0, iterations left: 17
+process [ls, 5] process queue number: 1, idle count: 0, iterations left: 16
+process [ls, 5] process queue number: 1, idle count: 0, iterations left: 15
+process [ls, 5] process queue number: 1, idle count: 0, iterations left: 14
+README         2 2 2286
+process [ls, 5] process queue number: 1, idle count: 0, iterations left: 13
+process [ls, 5] process queue number: 1, idle count: 0, iterations left: 12
+process [ls, 5] process queue number: 1, idle count: 0, iterations left: 11
+cat            2 3 13620
+process [ls, 5] process queue number: 1, idle count: 0, iterations left: 10
+process [ls, 5] process queue number: 1, idle count: 0, iterations left: 9
+process [ls, 5] process queue number: 1, idle count: 0, iterations left: 8
+process [ls, 5] process queue number: 1, idle count: 0, iterations left: 7
+echo           2 4 12628
+process [ls, 5] process queue number: 1, idle count: 0, iterations left: 6
+forktest       2 5 8056
+process [ls, 5] process queue number: 1, idle count: 0, iterations left: 5
+grep           2 6 15496
+process [ls, 5] process queue number: 1, idle count: 0, iterations left: 4
+init           2 7 13212
+process [ls, 5] process queue number: 1, idle count: 0, iterations left: 3
+process [ls, 5] process queue number: 1, idle count: 0, iterations left: 2
+process [ls, 5] process queue number: 1, idle count: 0, iterations left: 1
+process [ls, 5] process queue number: 1, idle count: 0, iterations left: 0
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 499
+kill           2 8 12684
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 498
+ln             2 9 12580
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 497
+ls             2 10 14764
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 496
+mkdir          2 11 12process [ls, 5] process queue number: 0, idle count: 0, iterations left: 495
+764
+rm       process [ls, 5] process queue number: 0, idle count: 0, iterations left: 494
+      2 12 12740
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 493
+sh             2 13 23228
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 492
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 491
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 490
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 489
+stressfs       2 14 process [ls, 5] process queue number: 0, idle count: 0, iterations left: 488
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 487
+1process [ls, 5] process queue number: 0, idle count: 0, iterations left: 486
+3412
+usertests     process [ls, 5] process queue number: 0, idle count: 0, iterations left: 485
+ 2 15 56340
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 484
+wc             2 16 14160
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 483
+zombie         process [ls, 5] process queue number: 0, idle count: 0, iterations left: 482
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 481
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 480
+2 17 12404
+coprocess [ls, 5] process queue number: 0, idle count: 0, iterations left: 479
+nsole        3 18 0
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 478
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 477
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 476
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 475
+stressfs0      2 19 10240process [ls, 5] process queue number: 0, idle count: 0, iterations left: 474
+
+stressfs1 process [ls, 5] process queue number: 0, idle count: 0, iterations left: 473
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 472
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 471
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 470
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 469
+     2 20 10240
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 468
+stressfs4      2 21 10240process [ls, 5] process queue number: 0, idle count: 0, iterations left: 467
+
+stressfs3process [ls, 5] process queue number: 0, idle count: 0, iterations left: 466
+      2 22 10240
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 465
+stressfs2      2 23 10240
+process [ls, 5] process queue number: 0, idle count: 0, iterations left: 464
+process [sh, 2] process queue number: 0, idle count: 1, iterations left: 491
+process [sh, 2] process queue number: 0, idle count: 1, iterations left: 490
+process [sh, 2] process queue number: 0, idle count: 1, iterations left: 489
+process [sh, 2] process queue number: 0, idle count: 1, iterations left: 488
+process [sh, 2] process queue number: 0, idle count: 1, iterations left: 487
+process [sh, 2] process queue number: 0, idle count: 1, iterations left: 486
+process [sh, 2] process queue number: 0, idle count: 1, iterations left: 485
+$ QEMU: Terminated
+]0;connorjd@cisc474: ~/x2/xv6-public[01;32mconnorjd@cisc474[00m:[01;34m~/x2/xv6-public[00m$ exit
+exit
+
+Script done on 2021-11-19 14:01:14-0500
